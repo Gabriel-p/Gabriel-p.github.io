@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="keywords" content="gabriel perren,gabriel,perren,projects,asteca,ez-padova,astronomy, open cluster, cluster, python, astrophysics">
+    <meta name="description" content="Gabriel Perren - About" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Gabriel Perren</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+<!--          <a id="forkme_banner" href="https://github.com/Gabriel-p">View on GitHub</a>-->
+
+          <h1 id="project_title">[ Gabriel I Perren ]</h1>
+<!--          <h2 id="project_tagline">Instituto de Astrofísica de La Plata</h2>-->
+            
+          <section id="menu">
+            <ul>
+              <li class="{%if page.url == 'index.html'%}active{%endif%}"><a href="index.html">About</a></li>
+                <li><a href="projs.html"><u>Projects</u></a></li>
+<!--              <li class="{%if page.url == 'projs.html'%}active{%endif%}"><a href="projs.html">Projects</a></li>-->
+<!--              <li class="{%if page.url == '/contribute/index.html'%}active{%endif%}"><a href="/CV/">CV</a></li>-->
+            </ul>
+          </section>
+            
+        </header>
+    </div>
+
+      
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+          
+<blockquote>
+<p>Central hub for some the projects I've worked on.</p>
+</blockquote>
+          
+      
+<ul type="circle">
+    <li><a href="#asteca">ASteCA</a></li>
+    <li><a href="#ezPADOVA-2">ezPADOVA-2</a></li>
+    <li><a href="#UBV-move">UBV-move</a></li>
+    <li><a href="#arXiv">arXiv</a></li>
+    <li><a href="#massclean_cl">massclean-cl</a></li>
+</ul>
+          
+<br/>
+
+<!-- Block -->
+<h3><a name="asteca" class="anchor" href="#asteca"><span class="octicon octicon-link"></span></a>ASteCA</h3>
+
+<p align="justify">The <strong>A</strong>utomated <strong>Ste</strong>llar <strong>C</strong>luster <strong>A</strong>nalysis package.</p>
+          
+<p><img src="http://asteca.readthedocs.org/en/latest/_images/centers.png" width="640"></p>
+      
+<p>Package to automatically process and analyze star clusters. More information is available in the code's <a href="http://asteca.github.io/">site</a>.</p>
+          
+<h3><a id="forkme_banner" href="https://github.com/asteca">View on GitHub</a></h3>
+<br/><br/>
+<hr>
+          
+<br/><br/>
+<!-- Block -->
+
+          
+<!-- Block -->
+<h3><a name="ezPADOVA-2" class="anchor" href="#ezPADOVA-2"><span class="octicon octicon-link"></span></a>ezPADOVA-2</h3>
+
+<p align="justify">A python package that allows you to download PADOVA/PARSEC isochrones directly from the <a href="http://stev.oapd.inaf.it/cgi-bin/cmd">CMD website</a>.
+
+Fork of the original <a href="https://github.com/mfouesneau/ezpadova">ezpadova</a> code by <a href="https://github.com/mfouesneau">Morgan Fouesneau</a>.</p>
+
+<h3><a id="forkme_banner" href="https://github.com/Gabriel-p/ezpadova">View on GitHub</a></h3>
+<br/><br/>
+<hr>
+          
+<br/><br/>
+<!-- Block -->    
+
+          
+<!-- Block -->
+<h3><a name="UBV-move" class="anchor" href="#UBV-move"><span class="octicon octicon-link"></span></a>UBV-move</h3>
+
+<p align="justify">Code to move stars in a UBV color-color diagram to their intrinsic position over a given ZAMS.</p>
+          
+<p><img src="/images/UBV-out2.png" width="640"></p>
+          
+<p>Uses an interpolated <a href="http://www.fcaglp.unlp.edu.ar/~egiorgi/cumulos/herramientas/tracks/zams.txt">Schmidt-Kaler (1982)</a> ZAMS and the standard extinction law:</p>
+
+<pre><code>
+E(U-B) = 0.72*E(B-V) + 0.05*E(B-V) ** 2
+</code></pre>
+          
+<h3><a id="forkme_banner" href="https://github.com/Gabriel-p/UBV_move">View on GitHub</a></h3>
+<br/><br/>
+<hr>
+          
+<br/><br/>
+<!-- Block -->
+          
+          
+<!-- Block -->
+<h3><a name="arXiv" class="anchor" href="#arXiv"><span class="octicon octicon-link"></span></a>arXiv</h3>
+
+<p align="justify">Attempts to imitate the <a href="http://myads.harvard.edu/myADS_help.html">myADS Notification Service</a>.
+<br>
+Goes through the new submissions in one ore more categories in <a href="https://github.com/Gabriel-p/arXiv/blob/master/arxiv.org">arXiv</a> and presents those articles more relevant to the user, sorted according to a list of keywords selected by the user.</p>
+
+<h3><a id="forkme_banner" href="https://github.com/Gabriel-p/arXiv">View on GitHub</a></h3>
+<br/><br/>
+<hr>
+          
+<br/><br/>
+<!-- Block -->
+          
+          
+<!-- Block -->
+<h3><a name="massclean_cl" class="anchor" href="#massclean_cl"><span class="octicon octicon-link"></span></a>massclean-cl</h3>
+
+<p align="justify">This set of bash/python scripts is intended to generate synthetic open clusters (SOCs) by making use of the <a href="http://www.physics.uc.edu/~bogdan/massclean/">MASSCLEAN</a> package and to compare their real parameters (center, radius, metallicity, age, distance, extinction) with those obtained by the <a href="asteca.github.io">ASteCA</a> code applied to each one of them.</p>
+
+<h3><a id="forkme_banner" href="https://github.com/Gabriel-p/massclean_cl">View on GitHub</a></h3>
+<br/><br/>
+<hr>
+          
+<br/><br/>
+<!-- Block -->
+          
+
+<!--
+<h3>
+<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+-->
+
+<!--
+<h3>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+-->
+
+<!--
+<h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+-->
+      </section>
+    </div>
+
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+  <footer class="inner">
+    <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+  </footer>
+</div>
+
+
+      
+<!-- Start of Google Analytics for Default Guide -->
+<!--
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-47035805-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+-->
+<!-- End of Google Analytics for Default Guide -->
+
+<!-- Start of StatCounter Code for Default Guide -->
+<!--
+<script type="text/javascript">
+var sc_project=10420740; 
+var sc_invisible=1; 
+var sc_security="651d9c7a"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="shopify stats"
+href="http://statcounter.com/shopify/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/10420740/0/651d9c7a/1/"
+alt="shopify stats"></a></div></noscript>
+-->
+<!-- End of StatCounter Code for Default Guide -->
+      
+  </body>
+</html>
+
