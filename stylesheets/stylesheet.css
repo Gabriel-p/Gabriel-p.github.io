@@ -9,7 +9,8 @@ by Jason Costello, @jsncostello
 MeyerWeb Reset
 *******************************************************************************/
 
-html, body, div, span, applet, object, iframe,
+/* div, footer,*/
+/*html, body, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -19,14 +20,16 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+figure, figcaption, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video */
+html, body, pre, code {
   margin: 0;
   padding: 0;
   border: 0;
   font: inherit;
-  vertical-align: baseline;
+  height: 100%;
+  /*vertical-align: baseline;*/ /*<-- Not sure what it does. Cmmt out.*/
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -89,7 +92,7 @@ Theme Styles
 body {
   box-sizing: border-box;
   color:#373737; 
-  background: #f2f2f2;
+  /*background: #f2f2f2;*/
   font-size: 18px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -132,7 +135,6 @@ h5 {
 h6 {
   font-size: 16px;
   text-align: center;
-  text-decoration: underline;
 }
 
 p {
@@ -199,11 +201,9 @@ p img {
 pre, code {
   width: 100%;
   color: #222;
-  background-color: #fff;
-
+  background-color: #f2f2f2;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 14px;
-
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -232,6 +232,7 @@ blockquote {
   margin-bottom: 20px;
   padding: 0 0 0 20px;
   border-left: 3px solid #bbb;
+  margin: 0;
 }
 
 
@@ -300,19 +301,34 @@ Full-Width Styles
 
 
 #main_content_wrap {
-/*  background: #f2f2f2;*/
-  background: #ffffff;
+  /*background: #ffffff;*/
   border-top: 1px solid #111;
-  border-bottom: 1px solid #111;
 }
 
 #main_content {
   padding-top: 40px;
 }
 
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
 #footer_wrap {
+  border-top: 1px solid #111;
   background: #f2f2f2;
   font-size: 12px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.foot_inner {
+  position: relative;
+  max-width: 640px;
+  padding: 5px 2px;
+  margin: 0 auto;
 }
 
 .outer {
@@ -379,7 +395,7 @@ Full-Width Styles
   text-shadow: #111 0px 0px 10px;
 }
 
-#downloads {
+/*#downloads {
   position: absolute;
   width: 210px;
   z-index: 10;
@@ -417,7 +433,7 @@ Full-Width Styles
 .tar_download_link:hover {
   background: url(../images/sprite_download.png) no-repeat top right;
 }
-
+*/
 
 
 /*******************************************************************************
