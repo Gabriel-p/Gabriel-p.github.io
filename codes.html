@@ -47,10 +47,10 @@
                     
           <ul type="circle">
               <li><a href="#asteca">ASteCA</a></li>
-              <li><a href="#ezPADOVA-2">ezPADOVA-2</a></li>
-              <li><a href="#UBV-move">UBV-move</a></li>
-              <li><a href="#arXiv">arXiv</a></li>
-              <li><a href="#massclean_cl">massclean-cl</a></li>
+              <li><a href="#pyUPMASK">pyUPMASK</a></li>
+              <li><a href="#IMF">IMF</a></li>
+              <li><a href="#Catalog Match">Catalog Match</a></li>
+              <li><a href="#astrometry">astrometry</a></li>
           </ul>
           <br>
 
@@ -62,7 +62,7 @@
           <strong>Ste</strong>llar <strong>C</strong>luster <strong>A</strong>nalysis
           package.</p>
                  
-          <p><img src="http://asteca.readthedocs.org/en/latest/_images/centers.png"
+          <p><img src="https://asteca.readthedocs.io/en/latest/_images/front_page.png"
           width="640"></p>
 
           <p>Package to automatically process and analyze star clusters. More information
@@ -72,74 +72,68 @@
           <br><br><hr><br><br>
           <!-- Block -->
 
+
           <!-- Block -->
-          <h3><a name="ezPADOVA-2" class="anchor" href="#ezPADOVA-2">
-          <span class="octicon octicon-link"></span></a>ezPADOVA-2</h3>
+          <h3><a name="pyUPMASK" class="anchor" href="#pyUPMASK">
+          <span class="octicon octicon-link"></span></a>pyUPMASK</h3>
 
-          <p align="justify">A python package that allows you to download
-          PADOVA/PARSEC isochrones directly from the
-          <a href="http://stev.oapd.inaf.it/cgi-bin/cmd">CMD website</a>.
+          <p align="justify">An unsupervised clustering method for stellar
+            clusters that builds upon the original
+          <a href="https://cran.r-project.org/web/packages/UPMASK/">UPMASK</a>
+          package.</p>
 
-          Fork of the original
-          <a href="https://github.com/mfouesneau/ezpadova">ezpadova</a> code by
-          <a href="https://github.com/mfouesneau">Morgan Fouesneau</a>.</p>
-
-          <h3><a id="forkme_banner" href="https://github.com/Gabriel-p/ezpadova">
+          <h3><a id="forkme_banner" href="https://github.com/msolpera/pyUPMASK">
           View on GitHub</a></h3>
           <br><br><hr><br><br>
           <!-- Block -->
 
+
           <!-- Block -->
-          <h3><a name="UBV-move" class="anchor" href="#UBV-move"><span class="octicon
-          octicon-link"></span></a>UBV-move</h3>
+          <h3><a name="IMF" class="anchor" href="#IMF"><span class="octicon
+          octicon-link"></span></a>IMF</h3>
 
-          <p align="justify">Code to move stars in a UBV color-color diagram to their
-          intrinsic position over a given ZAMS.</p>
+          <p align="justify">Estimate the IMF for an observed cluster, given
+          its individual masses (and uncertainties). The method is originally
+          developed in
+          <a href="https://academic.oup.com/mnras/article/434/4/3236/960889">Khalaj
+          & Baumgardt (2013).</a></p>
                     
-          <p><a href="https://raw.githubusercontent.com/Gabriel-p/UBV_move/
-master/out2.png"><img src="images/UBV-out2.png" width="640"></a></p>
-                    
-          <p align="justify">Uses an interpolated <a href="http://www.fcaglp.unlp.edu.ar/~egiorgi/
-cumulos/herramientas/tracks/zams.txt">Schmidt-Kaler (1982)</a> ZAMS and the
-          standard extinction law:
-
-          <pre><code>E(U-B) = 0.72*E(B-V) + 0.05*E(B-V) ** 2</code></pre></p>
-                    
-          <h3><a id="forkme_banner" href="https://github.com/Gabriel-p/UBV_move">View on
+          <h3><a id="forkme_banner" href="https://github.com/asteca/IMF">View on
           GitHub</a></h3>
           <br><br><hr><br><br>
           <!-- Block -->
 
+
           <!-- Block -->
-          <h3><a name="arXiv" class="anchor" href="#arXiv"><span class="octicon
-          octicon-link"></span></a>arXiv</h3>
+          <h3><a name="Catalog Match" class="anchor" href="#Catalog Match"><span class="octicon
+          octicon-link"></span></a>Catalog Match</h3>
 
-          <p align="justify">Attempts to imitate the <a href="http://myads.harvard.edu/
-myADS_help.html">myADS Notification Service</a>.
-          <br>
-          Goes through the new submissions in one ore more <a href="https://
-github.com/Gabriel-p/arXiv#categories">categories</a> in <a href="http://arxiv.org/">arXiv</a>
-          and presents those articles more relevant to the user, sorted according to a
-          list of keywords selected by the user.</p>
+          <p align="justify">Given input ra, dec coordinates, uses the
+          <a href="https://astroquery.readthedocs.io/">astroquery</a> package
+          to download the same frame from a selected catalog.
+          Both catalogs are then matched using astropy's
+          <a href="http://docs.astropy.org/en/stable/coordinates/matchsep.html#matching-catalogs">match_to_catalog_sky</a>.
 
-          <h3><a id="forkme_banner" href="https://github.com/Gabriel-p/arXiv">View on
+          <h3><a id="forkme_banner" href="https://github.com/Gabriel-p/catalog_match">View on
           GitHub</a></h3>
           <br><br><hr><br><br>
           <!-- Block -->
-                    
+
+
           <!-- Block -->
-          <h3><a name="massclean_cl" class="anchor" href="#massclean_cl"><span
-          class="octicon octicon-link"></span></a>massclean-cl</h3>
+          <h3><a name="astrometry" class="anchor" href="#astrometry"><span
+          class="octicon octicon-link"></span></a>astrometry</h3>
 
-          <p align="justify">This set of bash/python scripts is intended to generate
-          synthetic open clusters (SOCs) by making use of the
-          <a href="http://www.physics.uc.edu/~bogdan/massclean/">MASSCLEAN</a> package
-          and to compare their real parameters (center, radius, metallicity, age,
-          distance, extinction) with those obtained by the
-          <a href="http://asteca.github.io">ASteCA</a> code applied to each one
-          of them.</p>
+          <p align="justify">Takes an input data file with (x,y) coordinates
+          and assigns (alpha, delta) astrometry, given a *_corr.fits file
+          previously obtained from the <a href="http://nova.astrometry.net/">astrometry.net</a>
+          service. The algorithm used to transform (x,y)-->(ra,dec) is the one
+          <a href="https://elonen.iki.fi/code/misc-notes/affine-fit/">developed
+          by Jarno Elonen</a>, based on the article
+          <a href="https://hrcak.srce.hr/712">Fitting affine and orthogonal
+          transformations between two sets of points</a>, H. Späth (2004).</p>
 
-          <h3><a id="forkme_banner" href="https://github.com/Gabriel-p/massclean_cl">View
+          <h3><a id="forkme_banner" href="https://github.com/Gabriel-p/astrometry">View
           on GitHub</a></h3>
           <br><br><br><br><br><br>
           <!-- Block -->

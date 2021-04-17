@@ -160,7 +160,7 @@ a {
    /*...and now for the proper property */
   transition:.5s;
 }
-a:hover { color: #9b6162; }
+a:hover { color: #a63739; }
 
 footer a {
   color: #AEAAAA;
